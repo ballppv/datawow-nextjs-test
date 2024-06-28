@@ -17,7 +17,8 @@
     "react-dom": "^18",
     "sass": "^1.77.6",
     "styled-components": "^6.1.11",
-    "tailwind-merge": "^2.3.0"
+    "tailwind-merge": "^2.3.0",
+    "valibot": "^0.35.0"
   },
   "devDependencies": {
     "@types/node": "^20",
