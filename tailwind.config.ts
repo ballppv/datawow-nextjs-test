@@ -23,9 +23,24 @@ const config: Config = {
       fontSize: {
         '3xs': ['8px', '12px'],
       },
-      colors: {},
+      colors: {
+        golden: '#C5A365',
+        success: '#49A569',
+        green: {
+          100: '#D8E9E4',
+          300: '#2B5F44',
+          500: '#243831',
+        },
+        grey: {
+          100: '#BBC2C0',
+          300: '#939494',
+        },
+      },
       backgroundColor: {},
       borderColor: {},
+      textColor: {
+        primary: '#191919',
+      },
     },
   },
   plugins: [],

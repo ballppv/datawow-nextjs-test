@@ -2,8 +2,8 @@ import type { Metadata, Viewport } from 'next'
 import '@/styles/globals.scss'
 
 export const metadata: Metadata = {
-  title: 'DATAWOW TEST',
-  description: 'DATAWOW TEST',
+  title: 'a Board',
+  description: 'a Board',
 }
 
 export const viewport: Viewport = {
