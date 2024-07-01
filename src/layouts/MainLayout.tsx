@@ -1,12 +1,14 @@
 'use client'
 
 import { ReactNode, useEffect, useState } from 'react'
+import Navbar from './Navbar'
 
 interface MainLayoutProps {
   children: ReactNode
+  noNavbar?: boolean
 }
 
-export const MainLayout = ({ children }: MainLayoutProps) => {
+export const MainLayout = ({ children, noNavbar }: MainLayoutProps) => {
   const [isLoading, setIsLoading] = useState(true)
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -19,6 +21,7 @@ export const MainLayout = ({ children }: MainLayoutProps) => {
 
   return (
     <div className="bg-white">
+      {noNavbar ? null : <Navbar />}
       <div className="max-w-maximum-web min-h-[100vh] mx-auto">{children}</div>
     </div>
   )

@@ -1,8 +1,7 @@
 'use client'
 
-import Image from 'next/image'
 import tw from '@/utilities/tw'
-import ButtonBorder from '@/components/ButtonBorder'
+import MainLayout from '@/layouts/MainLayout'
 
 const classes = {
   container: tw(`relative w-full min-h-[100vh] flex bg-green-500`),
@@ -23,28 +22,8 @@ const classes = {
 
 export default function Home() {
   return (
-    <div className={classes.container}>
-      <div className={classes.signInSection}>
-        <div className={classes.signInFlexBox}>
-          <div className={classes.signInTitle}>Sign in</div>
-          <div className={classes.inputAndBtn}>
-            <ButtonBorder className={classes.signInBtn} onClick={() => {}}>
-              <div>Sign In</div>
-            </ButtonBorder>
-          </div>
-        </div>
-      </div>
-
-      <div className={classes.brandSection}>
-        <Image
-          src="/images/main-logo.png"
-          alt="main-logo"
-          className={classes.brandLogo}
-          width={299.61}
-          height={230}
-        />
-        <div className={classes.brandTitle}>a Board</div>
-      </div>
-    </div>
+    <MainLayout>
+      <div></div>
+    </MainLayout>
   )
 }
