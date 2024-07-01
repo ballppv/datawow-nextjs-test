@@ -21,7 +21,7 @@ const config: Config = {
         xl: '1440px',
       },
       fontSize: {
-        '3xs': ['8px', '12px'],
+        md: ['16px', '24px'],
       },
       colors: {
         golden: '#C5A365',

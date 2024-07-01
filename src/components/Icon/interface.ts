@@ -1,4 +1,4 @@
-export type TIconName = 'external' | 'menu'
+export type TIconName = 'external' | 'menu' | 'arrowRight' | 'home' | 'write' | 'comment'
 
 export type TIcon = {
   [key in TIconName]: string
